@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'montserratblack';
+    src: url('montserrat-black-webfont.woff2') format('woff2'),
+         url('montserrat-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *,
 *:before,
 *:after {
@@ -11,23 +20,40 @@ body {
 	font: 13px/2.3 'Roboto', sans-serif;
 }
 
-.visual h1 {
-	font: 82px 'Montserrat', sans-serif;
-	font-weight: 900;
+.h h1{
+	margin-bottom: 40px;
+	font: 900 112px/50px 'montserratblack', sans-serif;
+	line-height: 112px;
+	letter-spacing: -7px;
 	text-transform: uppercase;
 	text-align: center;
 	color: #fff;
 
 }
 
-.visual h6 {
-	font: bold 34px 'Montserrat', sans-serif;
+.h h6 {
+	font: bold 34px 'montserratblack', sans-serif;
 	color: #fff;
 	text-align: center;
+	margin: 0 0 45px 0;
+	padding-bottom: 40px;
+	border-bottom: solid 2px #9784ad;
+}
+
+.h p {
+	font: 28px 'montserratblack', sans-serif;
+	font-weight: 100;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 130px;
 }
 
 .the-best {
 	color: #ead7fb;
+}
+
+.buttons {
+
 }
 
 .logo {
@@ -35,7 +61,7 @@ body {
 }
 
 .visual {
-	height: 400px;
+	height: 833px;
 	background: url('../images/mi.png');
 }
 
@@ -124,6 +150,7 @@ a:hover {
 
 .header {
 	padding: 20px 0;
+	margin-bottom: 80px;
 }
 
 .header:after {
@@ -137,3 +164,75 @@ a:hover {
 	left: 0;
 	top: 100%;
 }
+
+.h li {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+}
+
+.images:after {
+	content: '';
+	display: block;
+
+
+}
+
+.image {
+	width: 340px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 65%, #f45f5f 100%);
+	background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 65%,#f45f5f 100%);
+	background: linear-gradient(to bottom, #ffffff 0%,#ffffff 65%,#f45f5f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f45f5f',GradientType=0 );
+	position: relative;
+	float: left;
+	margin: 0 0 0 60px;
+}
+
+.image:first-child {
+	margin: 0;
+}
+
+.image:before 
+.image:after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	height: 10px;
+	background: #f6f6f6;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	border-radius: 0 0 8px 8px;
+}
+
+.image:before {
+	margin-bottom: -14px 0 0;
+	z-index: 2;
+}
+
+.footer {
+	overflow: hidden;
+	padding: 30px 0;
+	border-top: 2px solid red;
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.footer .copy {
+	float: left;
+}
+
+.footer p {
+	text-align: justify;
+	position: relative;
+	float: right;
+}
+
